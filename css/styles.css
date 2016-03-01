@@ -1,61 +1,85 @@
-/*
-.header-image {
-	background-image: url(../images/header.jpg);
-	background-repeat: no-repeat;
-	background-position: left top;
-	width: 1024px;
-	height: 300px;
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
 }
 
-.building-image {
-	background-image: url(../images/building.jpg);
-	background-repeat: no-repeat;
-	background-position: left top;
-	width: 1024px;
-	height: 683px;
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
 }
-*/
 
-.topnav {
-	display: inline-block;
-	font-family: "National", Arial, sans-serif;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 20px;
-	text-transform: uppercase;
-	border: 1px #000 solid;
-	background-color: #000;
-	width:1022px;
-}
 
 .navigation {
-		display: inline;
-		margin-right: 30px;
-		margin-left: 60px;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  float: left;
+  padding-right: 50px;
+  background-image: url("../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-a.nav:link {color: #FFF; text-decoration: none;}
-a.nav:visited {color: #FFF; text-decoration: none;}
-a.nav:hover {color: #FF5C27; text-decoration: none;}
-a.nav:active {color: #FFF; text-decoration: none;}
+.nav-item {
+  text-align: center;
+  height: 65px;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'National';
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  float: right;
+  box-sizing: border-box;
+
+}
+
+.left {
+	float: left;
+	margin-left: 60px;
+	text-align: left;
+	padding-left: 0px;
+
+}
+
+a.nav-text:link {color: #FFF; text-decoration: none;}
+a.nav-text:visited {color: #FFF; text-decoration: none;}
+a.nav-text:hover {color: #FF5C27; text-decoration: none;}
+a.nav-text:active {color: #FFF; text-decoration: none;}
+
+
 
 .content {
-	padding-top: 0px;
-	padding-right: 300px;
+	width:66%;
+	padding-top: 270px;
 	padding-bottom: 0px;
 	padding-left: 60px;
-	margin: 0px;
 }
 
 
-h1.faq {
+.page-title {
 	font-family: "National", Arial, sans-serif;
 	color: #FFF;
 	font-weight: 700;
 	font-size: 80px;
-	line-height: 80px;
-	margin-top: -90px;
-	margin-bottom: 30px;
+	line-height: 80px;	
+	padding-top: 200px;
+	padding-left: 60px;
 }
 
 h1.home {
@@ -68,7 +92,7 @@ h1.home {
 	margin-bottom: 110px;
 }
 
-h2 {
+.main-section {
 	font-family: "National", Arial, sans-serif;
 	font-weight: 700;
 	font-size: 48px;
@@ -79,7 +103,7 @@ h2 {
 
 }
 
-h3 {
+.sub-section {
 	font-family: "National", Arial, sans-serif;
 	font-weight: 500;
 	font-size: 32px;
@@ -92,7 +116,7 @@ h3 {
 	border-bottom: 1px solid #CCC;
 }
 
-h4 {
+.question-first {
 	font-family: "National", Arial, sans-serif;
 	font-weight: 500;
 	font-size: 24px;
@@ -101,7 +125,7 @@ h4 {
 	margin-bottom: 10px;
 }
 
-h5 {
+.question {
 	font-family: "National", Arial, sans-serif;
 	font-weight: 500;
 	font-size: 24px;
@@ -112,14 +136,21 @@ h5 {
 	padding-top: 20px;
 }
 
-h6 {
+.body-copy {
 	font-family: "National", Arial, sans-serif;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 5px;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 29px;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+.intro {
+	margin-top: 50px;
+}
+
+p {
 	margin-top: 10px;
-	margin-bottom: 10px;
-	text-transform: uppercase;
 }
 
 a.text:link{
@@ -133,19 +164,14 @@ a.text:visited {color: #FF5C27; text-decoration: none;}
 a.text:hover {color: #FF5C27; text-decoration: none;}
 a.text:active {color: #FF5C27; text-decoration: none;}
 
-
-img {
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-
-p {
+h6 {
 	font-family: "National", Arial, sans-serif;
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 29px;
-	margin-top: 0px;
-	margin-bottom: 25px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 
 ul {
